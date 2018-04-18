@@ -522,7 +522,7 @@ a,
 .navbar .navbar-nav > li > a.btn.active, .open >
 .navbar .navbar-nav > li > a.btn.dropdown-toggle {
   background-color: transparent;
-  color: #777777;
+  color: #fec0aa;
   border-color: #777777;
 }
 .btn:disabled, .btn[disabled], .btn.disabled,
@@ -554,7 +554,7 @@ a,
 }
 .btn .caret,
 .navbar .navbar-nav > li > a.btn .caret {
-  border-top-color: #898c87;
+  border-top-color: white;
 }
 .btn:hover, .btn:focus,
 .navbar .navbar-nav > li > a.btn:hover,
@@ -1340,6 +1340,7 @@ border-color:
 .navbar .btn {
   margin: 15px 3px;
   font-size: 14px;
+  border: none !important;
 }
 .navbar .btn-simple {
   font-size: 16px;
@@ -1670,7 +1671,7 @@ border-color:
   width: 100%;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 30px;
   font-weight: normal;
 }
 .footer-big nav > ul li {
@@ -3784,7 +3785,8 @@ body {
 
 
   .sponsors {
-    padding-top: 0;
+    padding-top: 0 !important;
+    padding-bottom: 0;
   }
   
   .sponsors .container{
@@ -3808,6 +3810,26 @@ body {
     opacity: 0.8;
   }
 
+ 
+
   .fa {
     margin: 10px;
   }
+
+  .navfix {
+    margin: 10px;
+  }
+
+  language__button {
+   border: none !important;
+  }
+
+ paddingnone {
+   padding: 0;
+ }
+
+ .smaller {
+  height: 40%;
+  width: 40%;
+  padding: 30px; 
+}
