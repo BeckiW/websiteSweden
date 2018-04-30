@@ -3842,3 +3842,9 @@ body {
   margin: auto;
   padding: 44px;
 }
+
+.questions {
+  color: black;
+  font-size: 2em;
+  padding: 27px;
+}

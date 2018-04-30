@@ -32,7 +32,7 @@ var no_touch_screen = false;
 
 var burger_menu;
 
-var scroll_distance = 500;
+var scroll_distance = 100;
 
 $(document).ready(function(){
     BrowserDetect.init();
