@@ -31,11 +31,29 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href="assets/css/fonts/pe-icon-7-stroke.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+
 </head>
 
 <body>
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat" attribution="setup_tool" page_id="432981623768734" logged_in_greeting="Hi! So happy you are here! Just write us if you have any questions :) "
+        logged_out_greeting="Hi! So happy you are here! Write us if you have any questions :) ">
+    </div>
     <a href="sitemap.xml"></a>
+    <!-- <div class="fb-customerchat"
+    page_id="432981623768734">
+   </div> -->
     <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
         <!-- if yooooou want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
         <div class="container">
@@ -57,9 +75,11 @@
 
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right navbar-uppercase navfix">
-
                     <li>
-                        <a href="#needAWebsite"> Behöver du en hemsida?</a>
+                        <a href="#needAWebsite"> Kurser/events</a>
+                    </li>
+                    <li>
+                        <a href="#needAWebsite"> Behöver du hemsida?</a>
                     </li>
 
                     <li>
@@ -103,28 +123,56 @@
     <div class="section section-header">
 
         <div class="parallax filter filter-color-red">
-            <div class="image" style="background-image: url('assets/img/header-2.png')">
+            <div class="image" style="background-image: url('assets/img/back.jpg')">
             </div>
             <div class="container">
-
-
                 <div class="content">
                     <div class="title-area">
-
                         <h1 class="title-modern">Code Excursion Sweden</h1>
                         <h3>Lär dig programmera i Stockholm</h3>
 
                     </div>
-
-                    <div class="button-get-started">
-                        <a href="http://eepurl.com/c5ocrX" target="_blank" class="btn btn-white btn-fill btn-lg ">
-                            Jag är intresserad!
-                        </a>
+                    <div class="button_style">
+                        <div class="button-get-started">
+                            <a href="http://eepurl.com/c5ocrX" target="_blank" class="btn btn-white btn-fill btn-lg ">
+                                Jag är intresserad!
+                            </a>
+                        </div>
                     </div>
-                </div>
+                    <div class="text-center courses__firstpage">
+                        <a href="kurser.html" style="color: white">
+                            <div class="col-md-4 firstmodalpadd challactive">
+                                <h4>
+                                    <strong>12 veckor - Kvällstid Front-End </strong>
+                                </h4>
+                                <i class="pe-7s-angle-up icon__arrow"></i>
+                            </div>
+                        </a>
+                   
+                    <a href="kurser.html" style="color: white">
+                        <div class="col-md-4 firstmodalpadd challactive">
+                            <h4>
+                                <strong>Intensiv-dag HTML/CSS </strong>
+                            </h4>
+                            <i class="pe-7s-angle-up icon__arrow"></i>
+                        </div>
+                    </a>
 
+                    <a href="kurser.html" style="color: white">
+                        <div class="col-md-4">
+                            <div class="img-responsive challactive firstmodalpadd">
+                                <h4>
+                                    <strong>Intensiv-dag JAVASCRIPT </strong>
+                                </h4>
+                                <i class="pe-7s-angle-up icon__arrow"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
             </div>
+
         </div>
+    </div>
     </div>
 
     <a name="aboutUs"></a>
@@ -221,7 +269,12 @@
                                                 <div class="description">
                                                     <h3 class="title">Louise Serenhov</h3>
                                                     <p class="small-text">Founder</p>
-                                                    <p class="description">Jag är en student i Stockholm med en stor passion för personlig utveckling, entreprenörskap och teknik. Jag började programmera då vårt dåvarande startup plötsligen stod utan utvecklare och till min stora förvåning älskade jag det. I dag är programmering ett av mina stora intressen och något jag verkligen brinner för. När jag inte kodar eller pluggar är jag ofta ute och vandrar, klättrar eller cyklar. 
+                                                    <p class="description">Jag är en student i Stockholm med en stor passion för personlig utveckling,
+                                                        entreprenörskap och teknik. Jag började programmera då vårt dåvarande
+                                                        startup plötsligen stod utan utvecklare och till min stora förvåning
+                                                        älskade jag det. I dag är programmering ett av mina stora intressen
+                                                        och något jag verkligen brinner för. När jag inte kodar eller pluggar
+                                                        är jag ofta ute och vandrar, klättrar eller cyklar.
                                                     </p>
                                                 </div>
                                             </div>
@@ -239,7 +292,11 @@
                                                 <div class="description">
                                                     <h3 class="title">Caroline Hårdhammar</h3>
                                                     <p class="small-text">Founder</p>
-                                                    <p class="description">Jag är en ingenjör som älskar att arbeta där människor, teknik och design möts! Som en IT-konsult blev jag intresserad av UX, men för att kunna förstå processen av att utveckla digitala produkter och tjänster, ville jag också lära mig programmering. Utöver att lära mig nya saker älskar jag att åka skidor, surfa och hundar!  </p>
+                                                    <p class="description">Jag är en ingenjör som älskar att arbeta där människor, teknik och design
+                                                        möts! Som en IT-konsult blev jag intresserad av UX, men för att kunna
+                                                        förstå processen av att utveckla digitala produkter och tjänster,
+                                                        ville jag också lära mig programmering. Utöver att lära mig nya saker
+                                                        älskar jag att åka skidor, surfa och hundar! </p>
                                                 </div>
                                             </div>
                                         </div>
@@ -280,7 +337,7 @@
                 </div>
 
                 <div class="button-get-started">
-                    <a href="mailto:codeexcursion@gmail.com" target="_blank" class="btn btn-fill btn-lg">Get your website</a>
+                    <a href="mailto:codeexcursion@gmail.com" target="_blank" class="btn btn-fill btn-lg">Beställ sida!</a>
                 </div>
             </div>
         </div>
@@ -298,7 +355,7 @@
             <div class="row text-center">
                 <div class="col-md-3">
 
-                    <div class="img-responsive chall">
+                    <div class="img-responsive">
                         <p class="description">
                             "Code Excursion isn't just another coding course. It's more of a community where you get to meet other motivated and curious
                             girls, learn to code together, help each other out if you get stuck somewhere."
@@ -311,7 +368,7 @@
                 </div>
                 <div class="col-md-3">
                     <!-- <a href=""> -->
-                    <div class="img-responsive chall">
+                    <div class="img-responsive">
                         <p class="description">"Code Excursion was an AMAZING experience! Always such a welcoming and supporting atmosphere - no
                             pressure, no judgement. You get to be yourself and learn at your own pace. It was great that
                             we met on a regular basis. Very motivating in itself, but it was always something I looked forward
@@ -325,7 +382,7 @@
                 </div>
                 <div class="col-md-3">
                     <!-- <a href=""> -->
-                    <div class="img-responsive chall">
+                    <div class="img-responsive">
                         <p class="description"> "I got a deeper understanding of programming as whole, pretty secure with basic front-end, some backend.
                             Last not least, is the friendships that i hope to continue with."
                         </p>
@@ -333,7 +390,7 @@
                 </div>
                 <div class="col-md-3">
                     <!-- <a href=""> -->
-                    <div class="img-responsive chall">
+                    <div class="img-responsive">
                         <p class="description"> "I loved it, was really a highlight of my week and felt so blessed to be a part of it. Sometimes
                             it feel like there wasn't enough time, sometimes it felt like I was too tired :-D but it was
                             great having the flexiblity to be there and to meet other inspiring women. "
@@ -423,7 +480,7 @@
                         <div class="col-sm-6">
                             <div class="info-icon">
                                 <a target="_blank" href="http://knackeriet.se/">
-                                    <img alt="..." style="height: 40%; width: 40%; padding: 30px; " class="smaller" src="assets/img/knackeriet_bw1.png" />
+                                    <img alt="..." class="smaller" src="assets/img/knackeriet_bw1.png" />
                                 </a>
                             </div>
                         </div>
@@ -431,7 +488,7 @@
                         <div class="col-sm-6">
                             <div class="info-icon">
                                 <a target="_blank" href="https://misshosting.se/codeexcursion">
-                                    <img alt="..." style="height: 40%; width: 40%; padding: 30px; " class="smaller" src="assets/img/miss-hosting-logo.png" />
+                                    <img alt="..." class="smaller" src="assets/img/miss-hosting-logo.png" />
                                 </a>
                             </div>
                         </div>
@@ -472,8 +529,8 @@
                             </div>
                             <div class="col-md-4"> -->
 
-                                <ul class = "socialmedia text-center">
-                                    <li>
+                            <ul class="socialmedia text-center">
+                                <li>
                                     <a href="https://www.facebook.com/codeexcursion/" class="btn btn-social btn-facebook btn-simple">
                                         <i class="fa fa-facebook-square"></i> Facebook
                                     </a>
@@ -488,7 +545,7 @@
                                         <i class="fa fa-linkedin"></i> LinkedIn
                                     </a>
                                 </li>
-                                </ul>
+                            </ul>
                             <!-- </div> -->
 
                         </nav>

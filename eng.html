@@ -31,7 +31,22 @@
 </head>
 
 <body>
-
+    <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution="setup_tool"
+  page_id="432981623768734"
+  logged_in_greeting="Hi! So happy you are here! Just write us if you have any questions :) "
+  logged_out_greeting="Hi! So happy you are here! Write us if you have any questions :) ">
+</div>
     <a href="sitemap.xml"></a>
     <nav class="navbar navbar-default navbar-transparent navbar-fixed-top" color-on-scroll="200">
         <!-- if yooooou want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
@@ -63,6 +78,9 @@
                         <a href="#aboutUs">About us</a>
                     </li>
                     <li>
+                            <a href="enfaq.html">FAQ</a>
+                        </li>
+                    <li>
                         <a href="mailto:codeexcursion@gmail.com">
                             Contact us</a>
                     </li>
@@ -74,7 +92,7 @@
                                 ENG
                                 <span class="caret"></span>
                             </button>
-                            <ul class="dropdown-menu" "lan__butt" aria-labelledby="dropdownMenu1">
+                            <ul class="dropdown-menu lan__butt" aria-labelledby="dropdownMenu1">
                                 <li>
                                     <a href="index.html">SV</a>
                                 </li>
@@ -91,7 +109,7 @@
     <div class="section section-header">
 
         <div class="parallax filter filter-color-red">
-            <div class="image" style="background-image: url('assets/img/header-2.png')">
+            <div class="image" style="background-image: url('assets/img/back.jpg')">
             </div>
             <div class="container">
 
@@ -165,7 +183,7 @@
                             <i class="pe-7s-paper-plane"></i>
                         </div>
                         <h3>Future</h3>
-                        <p class="description">In the fall of 2018 we will start a new group in Stockholm. If you are interested in joining, follow
+                        <p class="description">In the fall of 2018 we will start a new 12-week group in Stockholm and separate one-day courses in HTML/CSS and JavaScript. If you are interested in joining, follow
                             us
                             <a href="https://www.facebook.com/codeexcursion/">
                                 <i class="fa fa-facebook-square"></i>

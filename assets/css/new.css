@@ -3746,6 +3746,14 @@ body {
     margin-top: 0;
     margin-right: 0;
   }
+  .smaller {
+    height: 60% !important;
+    width: 60% !important;
+    padding: 30px; 
+  }
+  .courses__firstpage {
+    display: none;
+  }
 }
 @media (min-width: 992px) {
   .section-pricing .row [class^="col-"] {
@@ -3847,4 +3855,48 @@ body {
   color: black;
   font-size: 2em;
   padding: 27px;
+}
+
+.button_style{
+  display: flex;
+  justify-content: center;
+}
+
+.button-get-started {
+  padding: 10px;
+}
+
+.modal-content {
+  top: 75px;
+}
+
+.chall {
+  border: 2px solid gray;
+  border-radius: 12px;
+  margin-bottom: 50px;
+ 
+}
+
+.challenges {
+  padding: 20px;
+  max-width: 270px;
+}
+
+
+.challenges__first {
+  max-width: 180px;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+.challactive:hover {
+  cursor: pointer;
+}
+
+.icon__arrow {
+  font-size: 110px;
+}
+
+.firstmodalpadd {
+  padding-top: 80px;
 }
