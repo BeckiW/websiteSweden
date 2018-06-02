@@ -151,8 +151,9 @@ small,
 }
 
 a {
-  color: #777777;
-  opacity: .7;
+  color: black;
+  font-weight: bold;
+  opacity: .8;
   font-size: 14px;
 }
 a:hover {
